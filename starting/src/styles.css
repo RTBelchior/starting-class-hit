@@ -33,5 +33,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     --main-line-height: 1.6;
     --main-font-size: 3rem;
     --main-font-size2: 2rem;
+    --outline: 2px, solid rgba(0,123,255,0.3);
+  }
+
+  @keyframes moveGradient {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
   }
 
