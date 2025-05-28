@@ -13,3 +13,4 @@ style.css adicionamos os style globais
 component.css
 dentro da tag style={...}
 no arquivo index adicionamos as fontes do projeto
+feita a configuração conf. do css globsl no srquivo app.component.css
