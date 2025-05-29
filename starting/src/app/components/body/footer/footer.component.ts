@@ -12,12 +12,12 @@ import { DateTime } from 'luxon';
 })
 export class FooterComponent implements OnInit{
   private routerinject = inject(Router) //Cria a nova forma de injeção
-  private dataTime;
+  protected dateTime;
 
   //Cria a forma tradiconal de injeção usado nos serviços ou componentes
   constructor(private router:Router){
     // JS
-    this.dataTime = DateTime.now();
+    this.dateTime = DateTime.now();
   }
   
   //Construtor do Angular

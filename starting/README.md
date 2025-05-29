@@ -26,3 +26,4 @@ instalação do luxon npm npm install --save-dev @types/luxon, npm install full-
 Criação construtor do Angular e não JS.
 Inicio a injeção de dependencia e tipo de injeção()
 Falaremos sobre injeção de dependencia usando o Router como exemplo this.router.navigateByUrl('/hit-class/project') e this.router.navigate(['/hit-class/project'])
+Inicio sobre interpolação{{}...}
