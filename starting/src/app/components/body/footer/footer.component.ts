@@ -22,7 +22,7 @@ export class FooterComponent implements OnInit{
   
   //Construtor do Angular
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    console.log(`Eu sou Template Literal: ${this.dateTime.day}`);
   }
 
   //Uso quando tenho um botão no html que precia de rota assim que for clicado
