@@ -28,3 +28,7 @@ Inicio a injeção de dependencia e tipo de injeção()
 Falaremos sobre injeção de dependencia usando o Router como exemplo this.router.navigateByUrl('/hit-class/project') e this.router.navigate(['/hit-class/project'])
 Inicio sobre interpolação{{...}}OBS: Interpolação somente para .HTML 
 Inicio sobre Template Literais `${...}` OBS: Template Literals somente para .TS
+
+# Aula 04
+1º Copiar o template para outro projeto do git
+2º Continuação da aula sobre rotas, no arquivo app.routes.ts
