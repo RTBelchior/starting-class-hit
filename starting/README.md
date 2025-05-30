@@ -32,4 +32,6 @@ Inicio sobre Template Literais `${...}` OBS: Template Literals somente para .TS
 # Aula 04
 1º Criação de componentes home, projets
 2º Continuação da aula sobre rotas, no arquivo app.routes.ts
+3º Explicação sobre rotas comuns e loadlazy
+4º Evento de {click} ="..."
 Copiar o template para outro projeto do git
