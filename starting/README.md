@@ -30,5 +30,6 @@ Inicio sobre interpolação{{...}}OBS: Interpolação somente para .HTML
 Inicio sobre Template Literais `${...}` OBS: Template Literals somente para .TS
 
 # Aula 04
-1º Copiar o template para outro projeto do git
+1º Criação de componentes home, projets
 2º Continuação da aula sobre rotas, no arquivo app.routes.ts
+Copiar o template para outro projeto do git
