@@ -15,8 +15,8 @@ dentro da tag style={...}
 no arquivo index adicionamos as fontes do projeto
 feita a configuração conf. do css globsl no srquivo app.component.css
 obs: Inicio do conhecimento sobre API de rotas
-1º No arquivo app.routes.ts é p local da mossa configurações globais
-2º Falaremos sobre routlink="...." que fica dentro do componente header.html
+1. No arquivo app.routes.ts é p local da mossa configurações globais
+2. Falaremos sobre routlink="...." que fica dentro do componente header.html
 temos de importar seu "Module"
 Estudar JS Objetos e JS Arraysou List
 
@@ -30,14 +30,20 @@ Inicio sobre interpolação{{...}}OBS: Interpolação somente para .HTML
 Inicio sobre Template Literais `${...}` OBS: Template Literals somente para .TS
 
 # Aula 04
-1º Criação de componentes home, projets
-2º Continuação da aula sobre rotas, no arquivo app.routes.ts
-3º Explicação sobre rotas comuns e loadlazy
-4º Evento de {click} ="..." e outros
+1. Criação de componentes home, projets
+2. Continuação da aula sobre rotas, no arquivo app.routes.ts
+3. Explicação sobre rotas comuns e loadlazy
+4. Evento de {click} ="..." e outros
 
 # Aula 05
 Configuração do firebase hosting 
 Copiar o template para outro projeto do git
 
 # Aula 06
-Criação dos componentes de nivelamento e suas tags
+Criação dos componentes de nivelamento e suas tags.
+Estruturas de Controle
+1. Inicio sobre Diretiva 
+2. Ternario
+3. If e Else
+4. For of
+Operadores
