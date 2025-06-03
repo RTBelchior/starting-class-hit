@@ -46,4 +46,10 @@ Estruturas de Controle
 2. Ternario
 3. If e Else
 4. For of
-Operadores
+Operadores 
+1. Operador Logico (||) operador OR
+2. Operador de Coalescência Nula (??)
+3. Operador ternario no Ts, Opttional Chainig
+4. Operador de Atribuição Condicional (?)
+5. Operador de Negação (!)
+6. Operador de DUPLA NEGAÇÃO (!!)

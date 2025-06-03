@@ -1,1 +1,16 @@
-<p>operators works!</p>
+<div class="variables-container">
+    <div class="variables-card">
+        <h2 class="variables-title">Operadores em Ação</h2>
+        <div class="variables-content">
+            <p>{{'Resultado lógico: ' + this.resultadoLogico}}</p>
+            <p>{{'Resultado Coalescência: ' + this.resultadoCoalescencia}}</p>
+            <p>Resultado Ternário: {{this.resultadoTernario}}</p>
+            <p>Telefone: {{this.resultadoAtribuicaoCondicional.contacto?.telefone}}</p>
+            <p>Cidade: {{this.resultadoAtribuicaoCondicional.endereco?.cidade}}</p>
+            <p>Operador Negação Numero:{{!this.operadorNegacaoNumero}}</p>
+            <p>Operador de Negação: {{!operadorNegacao}} </p>
+            <p>Operador de Dupla Negação Número: {{!!this.operadorNegacaoNumero}} </p>
+            <p>Operador de Dupla Negação: {{!!operadorNegacao}} </p>
+        </div>
+    </div>
+</div>
