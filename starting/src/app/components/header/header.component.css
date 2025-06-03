@@ -49,6 +49,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
+    background-color: var(--background-color-sections2);
     background-size: var(--animation-background-size);
     animation: var(--animation-background-size);
     height: max-content;
