@@ -38,3 +38,6 @@ Inicio sobre Template Literais `${...}` OBS: Template Literals somente para .TS
 # Aula 05
 Configuração do firebase hosting 
 Copiar o template para outro projeto do git
+
+# Aula 06
+Criação dos componentes de nivelamento e suas tags
