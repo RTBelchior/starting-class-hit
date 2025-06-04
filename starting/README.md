@@ -53,3 +53,8 @@ Operadores
 4. Operador de Atribuição Condicional (?)
 5. Operador de Negação (!)
 6. Operador de DUPLA NEGAÇÃO (!!)
+7. Injeção de Dependencia ou DI
+
+# Aula 07
+1. Inicio ao conceito de services, e criação de service
+2. Resquest em uma API, criar i cimponente de rota da API, bem sua rota
