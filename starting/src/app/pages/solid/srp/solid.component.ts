@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-solid',
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './solid.component.css'
 })
 export class SolidComponent {
-
+  private router = inject(Router);
+goBack() {
+  this.router.navigateByUrl('/srp');
+}
 }
