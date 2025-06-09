@@ -6,7 +6,7 @@ import { __values } from 'tslib';
 })
 export class PromisesService {
   protected promise = new Promise(resolve => resolve('Nossa Promise!'));
-  protected promiseValue: any = null; 
+  promiseValue: any = null; 
     constructor() {
       this.promise.then(value => console.log("Promise in Service:", value))
      }
