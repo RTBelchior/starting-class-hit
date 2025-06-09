@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-dip',
   imports: [],
   templateUrl: './dip.component.html',
-  styleUrl: './dip.component.css'
+  styleUrl: './../srp/solid.component.css',
 })
 export class DipComponent {
 

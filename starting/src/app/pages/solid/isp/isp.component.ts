@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-isp',
   imports: [],
   templateUrl: './isp.component.html',
-  styleUrl: './isp.component.css'
+  styleUrl: './../srp/solid.component.css',
 })
 export class IspComponent {
 

@@ -56,9 +56,10 @@ Operadores
 O header assim que passar o mouse vai mostrar as rotas filhas.
  
 # Aula 08
-1. criar os componentes Angular, Git, Nivelamento, Solid e seu components filhos
+1. criar os componentes  e stiliza-los, Angular, Git, Nivelamento, Solid e seu components filhos
 2. instrodução as rotas Filhas.
 3. criação das rotas filhas, hit, leves, api, solid.
+4. fazer novamente a instalação do firebase, fazer a configuração do projeto no Firebase Web e fazer o deploy
  
 # Aula 09
 1. Iniciar o Nivelamento 2
@@ -73,8 +74,19 @@ O header assim que passar o mouse vai mostrar as rotas filhas.
  
 # Aula 11
 1. criar o componente  de rota da API , bem sua rota e subscriber na api weather e regres.
-2. inicio dos Forms
+2. inicio dos Forms para componente signIn
 3. inicio dos Validators
  
 # Aula 12
+1. inicio dos Forms para componente signIn
+ 
+# Aula 14
+1. inicio dos Forms para componente signUp
+ 
+# Aula 15
 1. introdução ao Observables, criação component Observable. Update Header links para Asynchronous. Observable e Promise.
+ 
+ 
+# Aula 16
+1. Atualização da versão do Angular
+ 
