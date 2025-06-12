@@ -64,6 +64,7 @@ O header assim que passar o mouse vai mostrar as rotas filhas.
 # Aula 09
 1. Iniciar o Nivelamento 2
  
+2. Tabela de erro dentro Api
  
 # Aula 10
 1.  Inicio ao conceito de Services, e criação do services, weather e reqres.in
