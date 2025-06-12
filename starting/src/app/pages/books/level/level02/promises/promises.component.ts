@@ -1,5 +1,5 @@
-import { PromisesService } from './../../../../../_services/promises.service';
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject} from '@angular/core';
+import { PromisesService } from '../../../../../_services/promises.service';
 
 @Component({
   selector: 'app-promises',
@@ -7,16 +7,32 @@ import { Component, inject, OnInit } from '@angular/core';
   templateUrl: './promises.component.html',
   styleUrl: './promises.component.css'
 })
-export class PromisesComponent implements OnInit {
-  
-  protected PromisesService = inject(PromisesService);
-  protected localPromise : any;
-  
-
-  ngOnInit(): void {
-    console.log("Promise in Component:");
-    console.log("Promise in Component:"), this.PromisesService.getPromise();
-  
-    console.log("promiseValue:", this.PromisesService.promiseValue);
+export class PromisesComponent {
+  protected promiseService = inject(PromisesService);
+  protected localLoad = false;
+  protected message = "";
+  protected localerror = "";
+  ngOnInit() {
+    
+  }
+  /** Exemplo */
+  loadData = () => {
+    this.localLoad = true;
+    this.promiseService.seekRandomData().then((res) => {
+      this.message = res;
+      this.localLoad = false;
+    }).catch((err) => {
+      this.localerror = err;
+      this.localLoad = false;
+    });
+  }
+  /** Exemplo 2 */
+ async loadDataAsync () {
+    this.localLoad = true;
+    try {
+      this.message = await this.promiseService.seekRandomData();
+    } catch (error) {
+      this.localerror = error as string;
+    }
   }
 }
