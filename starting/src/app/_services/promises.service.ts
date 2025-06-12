@@ -1,3 +1,8 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
 export class PromisesService {
   protected promise = new Promise(resolve => resolve('Nossa Promessa'));
   promiseValue: any = null;

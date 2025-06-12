@@ -8,27 +8,24 @@ export class ObservableService {
 
   constructor() { }
 
-   //Versão básica com New Observable
-
-  seekData$ = () : Observable<string> => {
+  seekData$ = ():Observable<string> => {
     return new Observable(observer => {
       setTimeout(() => {
         const success = Math.random() > 0.3;
-        if (!success){
-          observer.error("Error: Falha ao carregar dados!");
+        if (!success) {
+          observer.error("Error: Falha ao Carregar dados!");
         }
-        observer.error("Dados Carregados com Sucesso!");
+        observer.next("Dados Carregados com Sucesso!");
         observer.complete();
-      }, 1500);
+      },1500);
     });
   }
-
-  dummyDataObservableRxJsOF = (): Observable<string | null> => {
+  dummyDataObservableRxJsOf = (): Observable<string | null> => {
     return of(null).pipe(delay(1500), map(() => {
       if (Math.random() > 0.3) {
-        return"Dados Carregados com sucesso";
+        return "Dados carregados com sucesso";
       }
-      throw new Error('Error: Falha ao carregar os Dados!');
+      throw new Error('Error: Falha ao carregar Dados!')
     }));
   }
 }
