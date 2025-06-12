@@ -7,15 +7,60 @@
   <section class="topic">
     <h4>Demonstração de Promise Usando Then e Catch</h4>
     <p>Clique no botão para simular uma requisição assíncrona:</p>
- 
- 
-  </section>
- 
-  <section class="topic">
+
+    <div class="demo-area">
+        <button class = "demo-button" (click)="loadData()">Load Data from Then & Catch</button>
+        @if (this.localLoad) {
+            <div class="loading-indicator">
+                <div class="spinner">
+
+                </div>
+                <span>Process...</span>
+            </div>
+        }
+        @if (localMessage) {
+            <div class="success-message">
+                 <i class="icon">✗</i>
+            </div>
+            {{ localMessage }}
+        }
+        @if (localerror) {
+            <div class="success-message">
+                 <i class="icon">✓</i>
+            </div>
+            {{ localerror }}
+        }
+    </div>
+    
+    
+</section>
+
+<section class="topic">
     <h4>Demonstração de Promise Usando Async & Await</h4>
     <p>Clique no botão para simular uma requisição assíncrona com Async & Await:</p>
-     
- 
+    <div class="demo-area">
+        <button class = "demo-button" (click)="loadData()">Load Data from Async & Await</button>
+        @if (this.localLoad) {
+                <div class="loading-indicator">
+                    <div class="spinner">
+
+                    </div>
+                    <span>Process...</span>
+                </div>
+            }
+            @if (localMessage) {
+                <div class="success-message">
+                    <i class="icon">✗</i>
+                </div>
+                {{ localMessage }}
+            }
+             @if (localerror) {
+            <div class="success-message">
+                 <i class="icon">✓</i>
+            </div>
+            {{ localerror }}
+        }
+        </div>
   </section>
-</div>
+
  
