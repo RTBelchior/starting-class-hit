@@ -59,12 +59,20 @@ O header assim que passar o mouse vai mostrar as rotas filhas.
 1. criar os componentes  e stiliza-los, Angular, Git, Nivelamento, Solid e seu components filhos
 2. instrodução as rotas Filhas.
 3. criação das rotas filhas, hit, leves, api, solid.
-4. fazer novamente a instalação do firebase, fazer a configuração do projeto no Firebase Web e fazer o deploy
  
 # Aula 09
 1. Iniciar o Nivelamento 2
+2. fazer novamente a instalação do firebase, fazer a configuração do projeto no Firebase Web e fazer o deploy
+3. https://favicon.io/favicon-generator/
+4. Falar de promise. Criar o component Promise
+5. Falar de Observable. Criar o component observarble e operador Diamante<any>, Operadores do RxJs Of(), Pipe(), Delay() e Map(), Subscrition(), UnSubscription()
+6. Falar de Signal. Criar c component signal
+7. iniciar Tipagem
+8. falar sobre Type e Interface
+9. Tabela de Errors dentro Api
+10. falar sobre CORS
  
-2. Tabela de erro dentro Api
+ 
  
 # Aula 10
 1.  Inicio ao conceito de Services, e criação do services, weather e reqres.in
@@ -90,4 +98,5 @@ O header assim que passar o mouse vai mostrar as rotas filhas.
  
 # Aula 16
 1. Atualização da versão do Angular
+ 
  

@@ -1,1 +1,66 @@
-<p>observables works!</p>
+<div class="container">
+  <h2>Exemplo de Observable no Angular</h2>
+  <p>Este exemplo demonstra como trabalhar com Observable no Angular, incluindo tratamento de erros com a sintaxe
+    async/await.</p>
+  <br>
+ 
+  <section class="topic">
+    <h4>Demonstração de Obsevrable Usando Then e Catch</h4>
+    <p>Clique no botão para simular uma requisição assíncrona:</p>
+
+    <div class="demo-area">
+        <button class = "demo-button" (click)="loadData()">Load Data from Observable</button>
+        @if (this.localLoad) {
+            <div class="loading-indicator">
+                <div class="spinner">
+
+                </div>
+                <span>Process...</span>
+            </div>
+        }
+        @if (localMessage) {
+            <div class="success-message">
+                 <i class="icon">✗</i>
+            </div>
+            {{ localMessage }}
+        }
+        @if (localerror) {
+            <div class="success-message">
+                 <i class="icon">✓</i>
+            </div>
+            {{ localerror }}
+        }
+    </div>
+    
+    
+</section>
+
+<section class="topic">
+    <h4>Demonstração de Obserable com operador OF</h4>
+    <p>Clique no botão para simular uma requisição assíncrona</p>
+    <div class="demo-area">
+        <button class = "demo-button" (click)="loadDataRxJs()">Load Data from OF()</button>
+        @if (this.localLoad) {
+                <div class="loading-indicator">
+                    <div class="spinner">
+
+                    </div>
+                    <span>Process...</span>
+                </div>
+            }
+            @if (localMessage) {
+                <div class="success-message">
+                    <i class="icon">✗</i>
+                </div>
+                {{ localMessage }}
+            }
+             @if (localerror) {
+            <div class="success-message">
+                 <i class="icon">✓</i>
+            </div>
+            {{ localerror }}
+        }
+        </div>
+  </section>
+
+ 
