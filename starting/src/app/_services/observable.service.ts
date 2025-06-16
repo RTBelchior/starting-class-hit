@@ -1,11 +1,16 @@
 import { Injectable } from '@angular/core';
 import { delay, map, Observable, of } from 'rxjs';
+import { dateTimestampProvider } from 'rxjs/internal/scheduler/dateTimestampProvider';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ObservableService {
-
+  private counter: number | null = null;
+  private localObservable$!: Observable<string | undefined>;
+  dummySeekdata$: any;
+  updateObservable: any;
+  resetObservable: any;
   constructor() { }
 
   seekData$ = ():Observable<string> => {
@@ -28,4 +33,9 @@ export class ObservableService {
       throw new Error('Error: Falha ao carregar Dados!')
     }));
   }
+
+  dummyAsyncObservable(): Observable<string>{
+    return this.localObservable$ = of(`Data by PipeAsync. Já disponivel e subscrito sem que vc pedisse: `).pipe(delay(1000));
+  }
+
 }
