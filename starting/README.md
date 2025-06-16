@@ -61,7 +61,7 @@ O header assim que passar o mouse vai mostrar as rotas filhas.
 3. criação das rotas filhas, hit, leves, api, solid.
  
 # Aula 09
-1. Iniciar o Nivelamento 2
+1. Iniciar o Nivelamento 1 e 2
 2. fazer novamente a instalação do firebase, fazer a configuração do projeto no Firebase Web e fazer o deploy
 3. https://favicon.io/favicon-generator/
 4. Falar de promise. Criar o component Promise
@@ -74,6 +74,7 @@ O header assim que passar o mouse vai mostrar as rotas filhas.
  
  
 # Aula 10
+0. Inicio do nivelamento 3 e 4
 1.  Inicio ao conceito de Services, e criação do services, weather e reqres.in
 2.  Resquest em uma API, fazer o cadastro na API https://www.weatherapi.com/my/ e https://reqres.in/
 3. criação do Metodo Get que retorna uma Promise e o Get que retorna um Observable.
@@ -81,6 +82,7 @@ O header assim que passar o mouse vai mostrar as rotas filhas.
 5. Tabela de Errors dentro Api
 6. falar sobre CORS
 7. falar sobre Type e Interface
+8. Nivelamento  03
  
  
 # Aula 11
