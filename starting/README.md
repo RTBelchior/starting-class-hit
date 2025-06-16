@@ -66,12 +66,11 @@ O header assim que passar o mouse vai mostrar as rotas filhas.
 3. https://favicon.io/favicon-generator/
 4. Falar de promise. Criar o component Promise
 5. Falar de Observable. Criar o component observarble e operador Diamante<any>, Operadores do RxJs Of(), Pipe(), Delay() e Map(), Subscrition(), UnSubscription()
-6. Falar de Signal. Criar c component signal
-7. iniciar Tipagem
-8. falar sobre Type e Interface
-9. Tabela de Errors dentro Api
-10. falar sobre CORS
- 
+6. Falar sobre Pipe Async
+7. Falar de Signal. Criar c component signal
+8. iniciar Tipagem
+9. Update header adicionar o link de Forms
+10. Criação do Signal Service e seu componente
  
  
 # Aula 10
@@ -79,6 +78,9 @@ O header assim que passar o mouse vai mostrar as rotas filhas.
 2.  Resquest em uma API, fazer o cadastro na API https://www.weatherapi.com/my/ e https://reqres.in/
 3. criação do Metodo Get que retorna uma Promise e o Get que retorna um Observable.
 4. cadastro no no site da APIs
+5. Tabela de Errors dentro Api
+6. falar sobre CORS
+7. falar sobre Type e Interface
  
  
 # Aula 11

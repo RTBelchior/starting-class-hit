@@ -1,1 +1,33 @@
-<p>signal works!</p>
+<div class="container">
+  <h2>Exemplo de Observable no Angular Pipe Async</h2>
+  <p>Este exemplo demonstra como trabalhar com Observable no Angular usando Pipe Async como Auto Subscription UnSubscription</p>
+  <br>
+ 
+  <section class="topic">
+      <h4>Demonstração ToSignal</h4>
+      <p>My Signal change to signal(): {{this.localToSignalWhithoutGet()}}</p>
+  </section>
+    
+    <section class="topic">
+        <h4>Demonstração Writetable Signal() 02</h4>
+        <p>
+            My Signal: {{ this.SignalService.dummySignal()}}
+        </p>
+    </section>
+    
+
+    <section class="topic">
+        <h4>Demonstração ToSignal()</h4>
+        <p>My name: {{this.localname()}}</p>
+    </section>
+
+
+    <section class="topic">
+        <h4>Demonstração de Pipe Async</h4>
+        <p>Clique no botão para simular uma requisição assíncrona:</p>
+        <div class="demo-area">
+            <button class = "demo-button" (click)="updateObs()">AddCounter</button>
+            <button class = "demo-button" (click)="resetObs()">ResetCounter</button>
+        </div>
+    </section>
+</div>
