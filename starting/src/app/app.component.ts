@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -12,16 +12,15 @@ import { ReqresService } from './_services/reqres.service';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent  implements OnInit{
 
-  ReqressService = inject(ReqresService);
-  ReqresService: any;
+  ReqresService = inject(ReqresService);
 
   ngOnInit(): void{
-    this.ReqresService.getDataReqresByGet().Subscription({
-      next: (res: any) => {console.log("Lembre-se Belchior: ",res)},
-      error: (e: any) => {console.error("Error: ", e)},
+    this.ReqresService.getDataReqresByGet().subscribe({
+      next: (res) => {console.log("Lembre-se Belchior: ",res)},
+      error: (e) => {console.error("Error: ", e)},
       complete: () => {},
     })
-  }
+  } 
 }
