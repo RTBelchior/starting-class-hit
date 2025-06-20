@@ -6,7 +6,10 @@ interface data{
     last_name: string,
 }
 
-
+interface support {
+    text: string,
+    url: string,
+}
 
 
 
@@ -14,4 +17,9 @@ interface data{
 
 export interface IReqRes{
     data: data[],
+    page: number,
+    per_page: number,
+    support: support,
+    total: number,
+    total_pages: number,
 }

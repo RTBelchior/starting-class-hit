@@ -1,11 +1,21 @@
-import { Component } from '@angular/core';
+import { httpResource } from '@angular/common/http';
+import { ReqresService } from './../../../_services/reqres.service';
+import { Component, Inject } from '@angular/core';
+import { Observable } from 'rxjs';
+import { IReqRes } from '../../../_shared/interfaces/reqres';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-reqres',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './reqres.component.html',
   styleUrl: './reqres.component.css'
 })
 export class ReqresComponent {
+  reqresService = Inject(ReqresService);
+  localReqRes$!: Observable<IReqRes>;
 
+  ngOnInit(): void {
+    this.localReqRes$ = this.reqresService.getDataReqresByGet();
+  }
 }

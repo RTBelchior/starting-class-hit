@@ -18,7 +18,7 @@ export class AppComponent  implements OnInit{
 
   ngOnInit(): void{
     this.ReqresService.getDataReqresByGet().subscribe({
-      next: (res) => {console.log("Lembre-se Belchior: ",res)},
+      next: (res) => {console.log("Lembre-se Belchior: ",res.data[1].email)},
       error: (e) => {console.error("Error: ", e)},
       complete: () => {},
     })
