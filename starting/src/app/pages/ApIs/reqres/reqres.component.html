@@ -1,19 +1,21 @@
 @if((this.localReqRes$| async); as response) {
 
     <div class="container" *ngIf="(localReqRes$ | async) as response">
-    <h2>Lista de Usuários</h2>
-    <p>Total de usuários: {{ response.total }}</p>
+    <h2>Lista de Utilizadores</h2>
+    <p>Total de utilizadores: {{ response.total }}</p>
     <p>Página atual: {{ response.page }} de {{ response.total_pages }}</p>
 
     <div class="user-list">
-        <div class="user-card" *ngFor="let user of response.data">
-        <img [src]="user.avatar" [alt]="user.first_name + ' ' + user.last_name" />
-        <div class="user-info">
-            <h4>{{ user.first_name }} {{ user.last_name }}</h4>
-            <p>Email: {{ user.email }}</p>
-            <p>ID: {{ user.id }}</p>
-        </div>
-        </div>
+        @for (user of response.data;  track $index) {
+            <div class="user-card">
+                <img [src]="user.avatar" [alt]="user.first_name + ' ' + user.last_name" />
+                <div class="user-info">
+                    <h4>{{ user.first_name }} {{ user.last_name }}</h4>
+                    <p>Email: {{ user.email }}</p>
+                    <p>ID: {{ user.id }}</p>
+                </div>
+            </div>
+        }
     </div>
 
     {{response.support.text}}
