@@ -1,6 +1,6 @@
 import { httpResource } from '@angular/common/http';
 import { ReqresService } from './../../../_services/reqres.service';
-import { Component, Inject } from '@angular/core';
+import { Component, inject, Inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { IReqRes } from '../../../_shared/interfaces/reqres';
 import { CommonModule } from '@angular/common';
@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './reqres.component.css'
 })
 export class ReqresComponent {
-  reqresService = Inject(ReqresService);
+  reqresService = inject(ReqresService);
   localReqRes$!: Observable<IReqRes>;
 
   ngOnInit(): void {
