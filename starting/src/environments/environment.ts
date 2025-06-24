@@ -12,4 +12,5 @@ export const environment = {
     },
 
     reqresApiKey: "reqres-free-v1",
+    wetherKey: keys.WeatherKey,
   }
