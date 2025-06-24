@@ -11,10 +11,6 @@ interface support {
     url: string,
 }
 
-
-
-
-
 export interface IReqRes{
     data: data[],
     page: number,
