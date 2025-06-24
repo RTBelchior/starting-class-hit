@@ -12,10 +12,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './reqres.component.css'
 })
 export class ReqresComponent {
-<<<<<<< HEAD
-[x: string]: any;
-=======
->>>>>>> aula10
   reqresService = inject(ReqresService);
   localReqRes$!: Observable<IReqRes>;
 
