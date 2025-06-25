@@ -7,7 +7,7 @@ export const routes: Routes = [
     {path: 'angular', loadComponent:() => import('./pages/angular/angular-component/angular.component').then(c => c.AngularComponent)},
     {path: 'angular/git', loadComponent: () => import('./pages/angular/git/git.component').then(c => c.GitComponent)},
     {path: 'hit', loadChildren:() => import('./pages/hit/hit.routes').then(c =>c.hitRoutes)},
-    {path: 'level', loadChildren: () => import('./pages/books/level/level.routes').then(c => c.levelRoutes)},
+    {path: 'level', loadChildren: () => import('./pages/books/level.routes').then(c => c.levelRoutes)},
     {path: 'solid', loadChildren: () => import('./pages/solid/solid.routes').then(c => c.solidRoutes)},
     {path: 'apis', loadChildren: () => import('./pages/ApIs/apis.routes').then(c => c.apisRoutes)},
 

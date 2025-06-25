@@ -1,5 +1,6 @@
 import { Component, inject} from '@angular/core';
-import { PromisesService } from '../../../../../_services/promises.service';
+import { PromisesService } from '../../../../_services/promises.service';
+
 
 @Component({
   selector: 'app-promises',

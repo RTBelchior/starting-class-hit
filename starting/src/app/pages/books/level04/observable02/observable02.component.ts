@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { ObservableService } from '../../../../../_services/observable.service';
+import { ObservableService } from '../../../../_services/observable.service';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { map, Observable, of } from 'rxjs';
