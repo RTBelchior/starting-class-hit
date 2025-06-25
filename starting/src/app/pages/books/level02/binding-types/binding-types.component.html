@@ -1,0 +1,36 @@
+<div class="container">
+  <h2>Exemplo de Promise no Angular</h2>
+  <p>Este exemplo demonstra como usar Binding, Type no lugar da Interface e Two Way DataBiding</p>
+  <br>
+ 
+  
+
+
+
+    <div class="user-list">
+            <div class="user-card">
+              <!-- Este é o Property Binding, vem de algum TS para o Template -->
+                <img [src]="user.avatar" [alt]="user.name " />
+                <!-- Este é o Binding, reenderiza variaveisdo TS no Template -->
+                <div class="user-info">
+                    <h4>{{ user.name }}</h4>
+                    <p>Email: {{ user.email }}</p>
+                    <p>ID: {{ user.isAdmin }}</p>
+                </div>
+            </div>
+            <section class="topic">
+              <p>Este exemplo demonstra como usar Two-Way DataBinding Property e Binding</p>
+              <h4>Digite seu nome</h4>
+              <!-- Este é o TwoWay DataBinding tanto  manda para o TS como Recebe do TS-->
+              <input type="text" [(ngModel)]="this.user.name" placeholder="Seu Nome"/>
+              
+            </section>
+          </div>
+</div>
+ 
+ 
+  
+
+
+
+ 
