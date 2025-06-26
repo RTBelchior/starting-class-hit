@@ -137,5 +137,91 @@ input[type="number"] {
   padding: 0.5rem;
   border-radius: var(--border-radius);
 }
+
+/*Css dos botões Goback()*/
+.right-align {
+  text-align: right;
+}
+ 
+.home-button {
+  background: var(--text-hover);
+  color: var(--text-color-light);
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+ 
+.home-button:hover {
+  background-color: var(--text-hover2);
+}
+
+@media (max-width: 1024px) {
+
+  .user-card {
+
+    width: 48%;
+
+  }
+
+}
+ 
+@media (max-width: 768px) {
+
+  .user-list {
+
+    flex-direction: column;
+
+    align-items: center;
+
+  }
+ 
+  .user-card {
+
+    width: 90%;
+
+  }
+ 
+  .demo-button {
+
+    width: 100%;
+
+    margin: 0.5rem 0;
+
+  }
+ 
+  input[type="text"],
+
+  input[type="number"] {
+
+    font-size: 0.95rem;
+
+    padding: 0.5rem;
+
+  }
+ 
+  .success-message,
+
+  .error-message {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+  }
+ 
+  .loading-indicator {
+
+    flex-direction: column;
+
+    align-items: center;
+
+  }
+
+}
+
+ 
  
  

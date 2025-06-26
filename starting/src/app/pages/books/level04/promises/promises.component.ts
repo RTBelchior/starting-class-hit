@@ -1,10 +1,11 @@
 import { Component, inject} from '@angular/core';
 import { PromisesService } from '../../../../_services/promises.service';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-promises',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './promises.component.html',
   styleUrl: './promises.component.css'
 })
