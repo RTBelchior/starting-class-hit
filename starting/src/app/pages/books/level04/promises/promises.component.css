@@ -158,6 +158,14 @@ input[type="number"] {
   background-color: var(--text-hover2);
 }
 
+/* Usando no Pipe component e outros */
+a{
+    color: var( --primary-color);
+    &:hover {
+        color: var(--text-hover);
+    }
+}
+
 @media (max-width: 1024px) {
 
   .user-card {
@@ -221,6 +229,8 @@ input[type="number"] {
   }
 
 }
+
+
 
  
  
