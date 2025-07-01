@@ -1,0 +1,154 @@
+<section class="firebase-guide">
+  <div class="content-wrap">
+    <header class="header">
+      <h1>Complete Guide: Firebase with Angular</h1>
+      <p class="subtitle">Firebase Integration in Angular</p>
+      <p class="subtitle">Full tutorial to set up Firebase Hosting, Authentication, and Firestore in Angular without AngularFire.</p>
+    </header>
+ 
+    <article>
+      <h2>Step-by-Step Setup</h2>
+      <h3>1. Install Firebase</h3>
+      <pre>
+        <code>
+npm install -g firebase-tools
+firebase login
+npm install firebase
+        </code>
+      </pre>
+      
+      <h3>2. Hosting Configuration</h3>
+      <pre>
+        <code>
+firebase init hosting
+        </code>
+      </pre>
+ 
+      <h2>Use the following settings:</h2>
+      <ul>
+        <li><strong>Public directory:</strong><code> dist/your-angular-project/browser</code></li>
+        <li><strong>SPA:</strong> Yes</li>
+        <li><strong>Overwrite index.html:</strong> Yes</li>
+      </ul>
+ 
+      <p class="note success">✅ For Angular Router, all routes are redirected to index.html.</p>
+      <p class="note warnig">❌ For static sites, routes like /about will show a 404 error.</p>
+
+      <h2>3. Enable Authentication</h2>
+      <ul>
+        <strong>1. </strong> Go to Firebase Console <br>
+        <strong>2. </strong> Select <strong>Email/Password</strong> and enable it
+      </ul>
+
+      <pre>
+        <code>
+import &#123; getAuth &#125; from 'firebase/auth';
+export const auth = getAuth(app);          
+        </code>
+      </pre>
+
+      <h4>Usage example:</h4>
+    <pre>
+        <code>
+import &#123; auth &#125; from './firebase';
+import &#123; signInWithEmailAndPassword &#125; from 'firebase/auth';
+
+signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => &#123;
+    // User is signed in
+ &#125;);         
+        </code>
+      </pre>
+
+
+      <h2>4. Firestore Setup</h2>
+      <pre>
+        <code>
+firebase init firestore
+        </code>
+      </pre>
+    
+      <h4>Basic rules:</h4>
+      <pre>
+        <code>
+rules_version = '2';
+service cloud.firestore &#123;
+  match /databases/&#123;database&#125;/documents &#123;
+    match /&#123;document=**&#125; &#123;
+      allow read, write: if request.auth != null;
+    &#125;
+  &#125;
+&#125;
+       </code>
+    </pre>
+
+    <pre>
+        <code> 
+            import &#123; getFirestore &#125; from 'firebase/firestore';
+            export const db = getFirestore(app);
+        </code>
+    </pre>
+
+    <h2>5. Full firebase.ts Setup</h2>
+    <pre>
+        <code>
+import &#123; initializeApp &#125; from 'firebase/app';
+import &#123; getAuth &#125; from 'firebase/auth';
+import &#123; getFirestore &#125; from 'firebase/firestore';
+
+const firebaseConfig = &#123;
+  apiKey: 'YOUR_API_KEY',
+  authDomain: 'YOUR_AUTH_DOMAIN',
+  projectId: 'YOUR_PROJECT_ID',
+  storageBucket: 'YOUR_STORAGE_BUCKET',
+  messagingSenderId: 'YOUR_SENDER_ID',
+  appId: 'YOUR_APP_ID',
+&#125;;
+
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+        </code>
+    </pre>
+    <p>⚠️ <strong> Use</strong> environment.ts <strong>and</strong> environment.prod.ts:</p>
+    <pre>
+        <code>
+"fileReplacements": [
+  &#123;
+    "replace": "src/environments/environment.ts",
+    "with": "src/environments/environment.prod.ts"
+  &#125;
+]
+        </code>
+    </pre>
+
+    <h2>6. Build and Deploy</h2>
+    <pre>
+        <code>
+ng build --configuration production
+firebase deploy
+        </code>
+    </pre>
+
+    <p>firebase.json <strong> config:</strong></p>
+
+    <pre>
+        <code>
+"rewrites": [
+  &#123; "source": "**", "destination": "/index.html" &#125;
+]
+        </code>
+    </pre>
+    <hr>
+    <h2>Full System Setup</h2>
+    <ul>
+        <li>✅ Firebase hosting deployed</li>
+        <li>✅ Auth system ready</li>
+        <li>✅ Firestore configured</li>
+    </ul>  
+    </article>
+  </div>
+</section>
+ 
+ 
+ 

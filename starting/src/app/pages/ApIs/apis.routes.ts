@@ -1,7 +1,8 @@
 import { Routes } from '@angular/router';
 
 export const apisRoutes : Routes =[
-    {path: '', redirectTo: 'APIs', pathMatch:'full'},
+    {path: '', redirectTo: 'apis', pathMatch:'full'},
+    {path: 'apis', loadComponent: () => import('./apis.component').then(cChild => cChild.ApIsComponent)}, 
     {path: 'reqres', loadComponent: () => import('./reqres/reqres.component').then(cChild => cChild.ReqresComponent)}, 
     {path: 'weather-channel', loadComponent: () => import('./weather-channel/weather-channel.component').then(cChild => cChild.WeatherChannelComponent)}, 
     {path: 'success200', loadComponent: () => import('./success-200/success-200.component').then(cChild => cChild.Success200Component)}, 

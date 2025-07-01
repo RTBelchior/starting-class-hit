@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-git',
   imports: [],
   templateUrl: './git.component.html',
-  styleUrl: './git.component.css'
+  styleUrl: './../../firebase/firebase.component.css'
 })
 export class GitComponent {
 

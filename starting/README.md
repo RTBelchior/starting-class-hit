@@ -1,8 +1,7 @@
 # Starting
  
-# starting
- 
 inicio do projeto
+Obs: Na aula 10, foi feito update do css do Header, foi feito a responsividade
  
 # aula01
  
@@ -75,7 +74,7 @@ Estrutura de controle
  
 # Aula 09
  
-1. Iniciar o Nivelamento 1 e 2
+1. Iniciar o Nivelamento 1
 2. fazer novamente a instalação do firebase, fazer a configuração do projeto no Firebase Web e fazer o deploy
 3. https://favicon.io/favicon-generator/
 4. Falar de promise. Criar o component Promise
@@ -88,7 +87,7 @@ Estrutura de controle
  
 # Aula 10
  
-0. Inicio do nivelamento 3 e 4
+0. Inicio do nivelamento 2, 3 e 4
 1. Inicio ao conceito de Services, e criação do services, weather e reqres.in
 2. Resquest em uma API, fazer o cadastro na API https://www.weatherapi.com/my/ e https://reqres.in/
 3. criação do Metodo Get que retorna uma Promise e o Get que retorna um Observable.
@@ -97,18 +96,21 @@ Estrutura de controle
 6. falar sobre CORS
 7. falar sobre Type e Interface, IReqres, IWeather
 8. Nivelamento 02, 03
-10. no app.config importar o provider do HTTPRequest , providerHttpClient();
-11. gerar error http para exemplos
-12. falar sobre o request, sobre devtools NETWORK / Fetch/XHR e sobre error.
-13. criar components success, error 400 and error 500, update header
-14. criar component reqres e fazer o seu style
+9. no app.config importar o provider do HTTPRequest , providerHttpClient();
+10. gerar error http para exemplos
+11. falar sobre o request, sobre devtools NETWORK / Fetch/XHR e sobre error.
+12. criar components success, error 400 and error 500, update header
+13. criar component reqres e fazer o seu style
+14. Nivelamento 2,falar sobre Regex. No file _shared/pipes/
 15. inicio aos formularios.
  
 # Aula 11
  
 1. criar o componente de rota da API , bem sua rota e subscriber na api weather e regres.
-2. inicio dos Forms para componente signIn
-3. inicio dos Validators
+2. Criação dos components firebaseInitHosting, authentication da rota filha angular/firebase e conf. do header
+Obs: Criação das paginas Pais, Angular, Firebase e What is Api, update do css e html deste components
+3. inicio dos Forms para componente weather
+4. inicio dos Validators
  
 # Aula 12
  
@@ -125,4 +127,3 @@ Estrutura de controle
 # Aula 16
  
 1. Atualização da versão do Angular
- 
