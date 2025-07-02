@@ -4,92 +4,95 @@
       <h1>Welcome to the Angular Trainer</h1>
       <p>Be ready to be more than just a student</p>
     </div>
-    
     <nav class="nav-content">
       <div class="nav-item has-expandable">
         <a class="logo-link">{{"dry? solid? calisthenics?" | upcaseFirstWord }}</a>
         <div class="submenu">
-          <a class="logo-link">What is Dry?</a>
-          <div class="submenu">
-            <a routerLink="/angular/dry" class="submenu-link">Dry</a>
+          <div class="submenu-block">
+            <a class="logo-link">What is Dry?</a>
+            <div class="submenu-sub">
+              <a routerLink="/angular/dry" class="submenu-link">Dry</a>
+            </div>
           </div>
-          <a routerLink="angular/solid" class="logo-link">What is Solid?</a>
-          <div class="submenu">
-            <a routerLink="angular/solid/srp" class="submenu-link">Single Responsibility Principle</a>
-            <a routerLink="angular/solid/ocp" class="submenu-link">Open and Closed Principle</a>
-            <a routerLink="angular/solid/lsp" class="submenu-link">Liskov Substitution Principle</a>
-            <a routerLink="angular/solid/isp" class="submenu-link">Interface Segregation Principle</a>
-            <a routerLink="angular/solid/dip" class="submenu-link">Dependency Inversion Principle</a>
+ 
+          <div class="submenu-block">
+            <a class="logo-link">What is Solid?</a>
+            <div class="submenu-sub">
+              <a routerLink="/angular/solid/srp" class="submenu-link">Single Responsibility Principle</a>
+              <a routerLink="/angular/solid/ocp" class="submenu-link">Open and Closed Principle</a>
+              <a routerLink="/angular/solid/lsp" class="submenu-link">Liskov Substitution Principle</a>
+              <a routerLink="/angular/solid/isp" class="submenu-link">Interface Segregation Principle</a>
+              <a routerLink="/angular/solid/dip" class="submenu-link">Dependency Inversion Principle</a>
+            </div>
           </div>
-          <a routerLink="angular/calisthenics" class="logo-link">What is Object Calisthenics?</a>
-          <div class="submenu">
-            <a routerLink="angular/calisthenics/rule1-one-indent" class="submenu-link">{{ "rule1-one-indent" | upcaseFirstWord }}</a>
-            <a routerLink="angular/calisthenics/rule1-one-indent" class="submenu-link">{{ "calisthenics" | upcaseFirstWord }}</a>
-            <a routerLink="angular/calisthenics/rule1-one-indent" class="submenu-link">{{ "calisthenics" | upcaseFirstWord }}</a>
-            <a routerLink="angular/calisthenics/rule1-one-indent" class="submenu-link">{{ "calisthenics" | upcaseFirstWord }}</a>
-            <a routerLink="angular/calisthenics/rule1-one-indent" class="submenu-link">{{ "calisthenics" | upcaseFirstWord }}</a>
-            <a routerLink="angular/calisthenics/rule1-one-indent" class="submenu-link">{{ "calisthenics" | upcaseFirstWord }}</a>
-            <a routerLink="angular/calisthenics/rule1-one-indent" class="submenu-link">{{ "calisthenics" | upcaseFirstWord }}</a>
-            <a routerLink="angular/calisthenics/rule1-one-indent" class="submenu-link">{{ "calisthenics" | upcaseFirstWord }}</a>
-            <a routerLink="angular/calisthenics/rule1-one-indent" class="submenu-link">{{ "calisthenics" | upcaseFirstWord }}</a>
+ 
+          <div class="submenu-block">
+            <a class="logo-link">What is Object Calisthenics?</a>
+            <div class="submenu-sub">
+              <a routerLink="/angular/calisthenics/rule1" class="submenu-link">Rule 1: Only One Level of
+                Indentation</a>
+              <a routerLink="/angular/calisthenics/rule2" class="submenu-link">Rule 2: Don't Use the ELSE
+                Keyword</a>
+              <a routerLink="/angular/calisthenics/rule3" class="submenu-link">Rule 3: Wrap All Primitives and
+                Strings</a>
+              <a routerLink="/angular/calisthenics/rule4" class="submenu-link">Rule 4: First Class
+                Collections</a>
+              <a routerLink="/angular/calisthenics/rule5" class="submenu-link">Rule 5: One Dot per Line</a>
+              <a routerLink="/angular/calisthenics/rule6" class="submenu-link">Rule 6: Don't Abbreviate</a>
+              <a routerLink="/angular/calisthenics/rule7" class="submenu-link">Rule 7: Keep All Entities
+                Small</a>
+              <a routerLink="/angular/calisthenics/rule8" class="submenu-link">Rule 8: No Classes with More Than
+                Two Instance Variables</a>
+              <a routerLink="/angular/calisthenics/rule9" class="submenu-link">Rule 9: No
+                Getters/Setters/Properties</a>
+            </div>
           </div>
         </div>
+ 
       </div>
-
-      <!-- <div class="nav-item has-expandable">
-        <a routerLink="angular/startHit" class="logo-link">Start Hit</a>
-        <div class="submenu">
-          <a routerLink="angular/hit/home" class="submenu-link">Home</a>
-          <a routerLink="angular/hit/project"  class="submenu-link">Project</a>
-        </div>
-      </div> -->
+ 
  
       <div class="nav-item has-expandable">
         <a routerLink="/angular" class="logo-link">Angular</a>
         <div class="submenu">
           <a routerLink="/angular/get-starting" class="submenu-link">Get Starting With Angular</a>
-          <a routerLink="/angular/git"  class="submenu-link">Git</a>
+          <a routerLink="/angular/git" class="submenu-link">Git</a>
         </div>
       </div>
-
       <div class="nav-item has-expandable">
         <a routerLink="/angular/firebase" class="logo-link">Firebase</a>
         <div class="submenu">
-          <a routerLink="/angular/firebase/init-with-hosting" class="submenu-link">Init With Hosting</a>
-          <a routerLink="/angular/firebase/authentication"  class="submenu-link">Authentication</a>
+          <a routerLink="/angular/firebase/init-with-hosting" class="submenu-link">Init with Hosting</a>
+          <a routerLink="/angular/firebase/authentication" class="submenu-link">Authentication</a>
         </div>
       </div>
  
       <div class="nav-item has-expandable">
-        <a class="logo-link">Nívelamento</a>
+        <a class="logo-link">Leveling</a>
         <div class="submenu">
-          <a routerLink="angular/level/levelone" class="submenu-link">Nivelamento 1</a>
-          <a routerLink="angular/level/leveltwo"  class="submenu-link">Nivelamento 2</a>
-          <a routerLink="angular/level/levelthree"  class="submenu-link">Nivelamento 3</a>
-          <a routerLink="angular/level/levelfour"  class="submenu-link">Nivelamento 4</a>
+          <a routerLink="/angular/level/levelone" class="submenu-link">Nivelamento 1</a>
+          <a routerLink="/angular/level/leveltwo" class="submenu-link">Nivelamento 2</a>
+          <a routerLink="/angular/level/levelthree" class="submenu-link">Nivelamento 3</a>
+          <a routerLink="/angular/level/levelfour" class="submenu-link">Nivelamento 4</a>
         </div>
       </div>
- 
-
       <div class="nav-item has-expandable">
-        <a routerLink="angular/apis" class="logo-link">APIs</a>
+        <a routerLink="/angular/apis" class="logo-link">APIs</a>
         <div class="submenu">
-          <a routerLink="angular/apis/success200"  class="submenu-link">Http Success 200</a>
-          <a routerLink="angular/apis/error400"  class="submenu-link">Http Error 400</a>
-          <a routerLink="angular/apis/error500"  class="submenu-link">Http Error 500</a>
-          <a routerLink="angular/apis/Cors"  class="submenu-link">Cors</a>
-          <a routerLink="angular/apis/weather-channel" class="submenu-link">Weather Channel</a>
-          <a routerLink="angular/apis/reqres"  class="submenu-link">Reqres</a>
+          <a routerLink="/angular/apis/success200" class="submenu-link">Http Sucess 200</a>
+          <a routerLink="/angular/apis/error400" class="submenu-link">Http Error 400</a>
+          <a routerLink="/angular/apis/error500" class="submenu-link">Http Error 500</a>
+          <a routerLink="/angular/apis/cors" class="submenu-link">Cors</a>
+          <a routerLink="/angular/apis/reqres" class="submenu-link">Reqres</a>
+          <a routerLink="/angular/apis/weather-channel" class="submenu-link">Weather Channel</a>
         </div>
       </div>
- 
-
       <div class="nav-item has-expandable">
         <a routerLink="/angular/forms" class="logo-link">Forms</a>
         <div class="submenu">
-          <a routerLink="/angular/forms/validators"  class="submenu-link">Validators</a>
+          <a routerLink="/angular/forms/validators" class="submenu-link">Validators</a>
           <a routerLink="/angular/forms/signin" class="submenu-link">SignIn</a>
-          <a routerLink="/angular/forms/signup"  class="submenu-link">SignUp</a>
+          <a routerLink="/angular/forms/signup" class="submenu-link">SignUp</a>
         </div>
       </div>
  

@@ -1,10 +1,12 @@
-import { apisRoutes } from './pages/ApIs/apis.routes';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
     {path: '', redirectTo:'angular', pathMatch:'full'}, //Rota Padrão
     {path: 'angular', loadChildren:() => import('./pages/angular/angular.routes').then(c => c.angularRoutes)},
+    {path: 'angular/dry', loadChildren:() => import('./pages/dry/dry.routes').then(c => c.DryRoutes)},
+    {path: 'angular/calisthenics', loadChildren:() => import('./pages/calisthenics/calisthenics.roules').then(c => c.calisthenicsRoutes)},
+
     {path: 'angular/firebase', loadChildren:() => import('./pages/firebase/firebase.routes').then(c => c.hitRoutes)},
     
     {path: 'angular/hit', loadChildren:() => import('./pages/hit/hit.routes').then(c =>c.hitRoutes)},

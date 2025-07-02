@@ -1,0 +1,35 @@
+<section class="firebase-guide">
+  <div class="content-wrap">
+    <header class="header">
+      <h1>Rule 1: Only One Level of Indentation per Method</h1>
+      <p class="subtitle">Encourage simpler and flatter control structures</p>
+    </header>
+ 
+    <article>
+        <p>Em Angular, métodos muito aninhados nos componentes dificultam a leitura e manutenção. Esta regra sugere evitar mais de um nível de indentação por função.</p>
+        <h2>Exemplo no Angular</h2>
+        <p>Evite:</p>
+        <pre>
+            <code>
+if (this.isLoggedIn) &#123;
+  if (this.userRole === 'admin') &#123;
+    this.navigateToDashboard();
+  &#125;
+&#125;
+            </code>
+        </pre>
+        <p>Prefira:</p>
+        <pre>
+            <code>
+if (!this.isLoggedIn) return;
+if (this.userRole === 'admin') this.navigateToDashboard();
+            </code>
+        </pre>
+    </article>
+  </div>
+</section>
+ 
+ 
+ 
+
+
