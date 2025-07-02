@@ -111,7 +111,7 @@
 }
  
 .has-expandable:hover .submenu {
-  max-height: 300px;
+  max-height: max-content;
 }
  
 .submenu-link {
