@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-rule2',
   imports: [],
   templateUrl: './rule2.component.html',
-  styleUrl: './rule2.component.css'
+  styleUrl: './../../firebase/firebase.component.css'
 })
 export class Rule2Component {
 

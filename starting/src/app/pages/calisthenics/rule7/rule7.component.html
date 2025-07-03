@@ -1,1 +1,32 @@
-<p>rule7 works!</p>
+<section class="firebase-guide">
+  <div class="content-wrap">
+    <header class="header">
+      <h1>Rule 7: Keep All Entities Small</h1>
+      <p class="subtitle">Classes and components should do only one thing</p>
+    </header>
+ 
+    <article>
+        <p>Componentes e serviços Angular devem ser pequenos e com propósito único. Quebre responsabilidades em partes reutilizáveis.</p>
+        <h2>Exemplo no Angular</h2>
+        <p>Evite:</p>
+        <pre>
+            <code>
+UserComponent faz tudo: form, validação, API, lista, etc.
+            </code>
+        </pre>
+        <p>Prefira:</p>
+        <pre>
+            <code>
+- UserFormComponent
+- UserListComponent
+- UserService
+            </code>
+        </pre>
+    </article>
+  </div>
+</section>
+ 
+ 
+ 
+
+

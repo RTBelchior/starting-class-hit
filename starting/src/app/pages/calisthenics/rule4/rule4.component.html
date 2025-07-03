@@ -1,1 +1,34 @@
-<p>rule4 works!</p>
+<section class="firebase-guide">
+  <div class="content-wrap">
+    <header class="header">
+      <h1>Rule 4: First Class Collections</h1>
+      <p class="subtitle">Collections should be encapsulated in their own classes</p>
+    </header>
+ 
+    <article>
+        <p>Em Angular, evite expor diretamente arrays. Envolva listas em classes com comportamento próprio.</p>
+        <h2>Exemplo no Angular</h2>
+        <p>Evite:</p>
+        <pre>
+            <code>
+this.users: User[] = [];
+            </code>
+        </pre>
+        <p>Prefira:</p>
+        <pre>
+            <code>
+class UserList &#123;
+  private users: User[] = [];
+  add(user: User): void &#123;...&#125;
+  isEmpty(): boolean &#123;...&#125;
+&#125;
+            </code>
+        </pre>
+    </article>
+  </div>
+</section>
+ 
+ 
+ 
+
+

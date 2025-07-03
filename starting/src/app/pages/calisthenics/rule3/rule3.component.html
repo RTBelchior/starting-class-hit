@@ -1,1 +1,34 @@
-<p>rule3 works!</p>
+<section class="firebase-guide">
+  <div class="content-wrap">
+    <header class="header">
+      <h1>Rule 3: Wrap All Primitives and Strings</h1>
+      <p class="subtitle">Avoid primitive obsession using strong types</p>
+    </header>
+ 
+    <article>
+        <p>No Angular, evite passar strings ou números diretamente entre serviços/componentes. Use interfaces ou classes para encapsular dados.</p>
+        <h2>Exemplo no Angular</h2>
+        <p>Evite:</p>
+        <pre>
+            <code>
+login(user: string, pass: string) &#123;...&#125;
+            </code>
+        </pre>
+        <p>Prefira:</p>
+        <pre>
+            <code>
+interface Credentials &#123;
+  username: string;
+  password: string;
+&#125;
+login(credentials: Credentials) &#123;...&#125;
+            </code>
+        </pre>
+    </article>
+  </div>
+</section>
+ 
+ 
+ 
+
+

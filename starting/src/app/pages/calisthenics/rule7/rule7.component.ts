@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-rule7',
   imports: [],
   templateUrl: './rule7.component.html',
-  styleUrl: './rule7.component.css'
+  styleUrl: './../../firebase/firebase.component.css'
 })
 export class Rule7Component {
 

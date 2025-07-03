@@ -1,1 +1,35 @@
-<p>rule2 works!</p>
+<section class="firebase-guide">
+  <div class="content-wrap">
+    <header class="header">
+      <h1>Rule 2: Don’t Use the ELSE Keyword</h1>
+      <p class="subtitle">Prefer early returns to simplify logic</p>
+    </header>
+ 
+    <article>
+        <p>Em Angular, componentes limpos evitam `else`. Ao retornar antecipadamente, a lógica fica mais direta e testável.</p>
+        <h2>Exemplo no Angular</h2>
+        <p>Evite:</p>
+        <pre>
+            <code>
+if (this.hasPermission) &#123;
+  this.loadData();
+&#125; else &#123;
+  this.redirect();
+&#125;
+            </code>
+        </pre>
+        <p>Prefira:</p>
+        <pre>
+            <code>
+if (!this.hasPermission) return this.redirect();
+this.loadData();
+            </code>
+        </pre>
+    </article>
+  </div>
+</section>
+ 
+ 
+ 
+
+

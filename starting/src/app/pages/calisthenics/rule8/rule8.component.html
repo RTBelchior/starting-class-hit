@@ -1,1 +1,34 @@
-<p>rule8 works!</p>
+<section class="firebase-guide">
+  <div class="content-wrap">
+    <header class="header">
+      <h1>Rule 8: No More Than Two Instance Variables</h1>
+      <p class="subtitle">Simplify class design by limiting state</p>
+    </header>
+ 
+    <article>
+        <p>Em Angular, componentes com muitos atributos de instância tornam-se difíceis de testar e manter. Agrupe e encapsule sempre que possível.</p>
+        <h2>Exemplo no Angular</h2>
+        <p>Evite:</p>
+        <pre>
+            <code>
+this.name
+this.email
+this.phone
+this.address
+this.company
+            </code>
+        </pre>
+        <p>Prefira:</p>
+        <pre>
+            <code>
+this.userDetails = &#123; name, email, phone, address, company &#125;
+            </code>
+        </pre>
+    </article>
+  </div>
+</section>
+ 
+ 
+ 
+
+

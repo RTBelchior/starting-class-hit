@@ -13,6 +13,7 @@ export const routes: Routes = [
     {path: 'angular/level', loadChildren: () => import('./pages/books/level.routes').then(c => c.levelRoutes)},
     {path: 'angular/solid', loadChildren: () => import('./pages/solid/solid.routes').then(c => c.solidRoutes)},
     {path: 'angular/apis', loadChildren: () => import('./pages/ApIs/apis.routes').then(c => c.apisRoutes)},
+    {path: 'angular/forms', loadChildren: () => import('./pages/forms/forms.routes').then(c => c.formsRoutes)},
 
 
     {path: 'hit/class-project', loadComponent:() => import('./pages/hit/class-project/class-project.component').then(c => c.ClassProjectComponent)},

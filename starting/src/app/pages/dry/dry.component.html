@@ -24,14 +24,20 @@
       <p>Create small components that can be reused in multiple places:</p>
       <pre>
         <code>
-            
+&lt;app-button [label]="Save" (click)="save()"&gt;&lt;/app-button&gt;
         </code>
       </pre>
       <h3>2. Shared Services</h3>
       <p>Use services to share business logic, HTTP requests, or state:</p>
       <pre>
         <code>
-
+// user.service.ts
+{{'@Injectable'}}(&#123; providedIn: 'root' &#125;)
+export class UserService &#123;
+  getUsers() &#123;
+    return this.http.get('/api/users');
+  &#125;
+ &#125;
         </code>
       </pre>
 
@@ -39,7 +45,12 @@
       <p>Encapsulate common behaviors in custom directives:</p>
       <pre>
         <code>
-
+{{'@Directive'}}(&#123; selector: '[appHighlight]'&#125;)
+export class HighlightDirective &#123;
+  constructor(el: ElementRef) &#123;
+    el.nativeElement.style.backgroundColor = 'yellow';
+   &#125;
+ &#125;
         </code>
       </pre>
 
@@ -47,7 +58,12 @@
       <p>Transform values consistently across the app:</p>
       <pre>
         <code>
-            
+{{'@Pipe'}}(&#123; name: 'capitalize' &#125;)
+export class CapitalizePipe implements PipeTransform &#123;
+  transform(value: string): string &#123;
+    return value.charAt(0).toUpperCase() + value.slice(1);
+  &#125;
+ &#125;
         </code>
       </pre>
 
@@ -61,7 +77,7 @@ this.form = this.fb.group(&#123;
 &#125; );
         </code>
       </pre>
- 
+      
       <div class="note success">
         ✅ DRY helps create clean, efficient, and scalable codebases by minimizing duplication.
       </div>

@@ -1,1 +1,63 @@
-<p>rule9 works!</p>
+<section class="firebase-guide">
+  <div class="content-wrap">
+    <header class="header">
+      <h1>Rule 9 - Don’t Use Getters/Setters</h1>
+      <p class="subtitle">Avoid accessing internal data from outside the object.</p>
+    </header>
+ 
+    <article>
+        <h2>Why Avoid Getters and Setters?</h2>
+        <p>In Object Calisthenics, exposing internal state through <strong>getters</strong> or modifying it with <strong>setters</strong>breaks encapsulation. It treats objects like data containers rather than behavior-driven entities.</p>
+        <h2>Angular Context</h2>
+        <p>In Angular components or services, instead of using a getter to expose data (like a user name), prefer exposing a method that expresses an action or behavior.</p>
+        <h2>❌ Bad Example:</h2>
+        <pre>
+            <code>
+export class User &#123;
+  private name = 'Ana';
+
+  getName() &#123; return this.name; &#125;
+&#125;
+            </code>
+        </pre>
+        <p>And then using it like:</p>
+        <pre>
+            <code>
+const userName = user.getName();
+console.log('Welcome, ' + userName);
+            </code>
+        </pre>
+
+        <h2>✅ Good Example:</h2>
+        <pre>
+            <code>
+export class User &#123;
+  private name = 'Ana';
+
+  greet(): string &#123;
+    return `Welcome, $&#123;this.name&#125;`;
+  &#125;
+&#125;
+            </code>
+        </pre>
+        <p>Then use it like:</p>
+        <pre>
+            <code>
+console.log(user.greet());
+            </code>
+        </pre>
+
+        <h2>When Using Getters Makes Sense</h2>
+        <p>While Object Calisthenics recommends avoiding them, Angular heavily uses getters for performance or template bindings. The goal here is to **not abuse getters as shortcuts to avoid encapsulating logic**.</p>
+
+        <div class="note warning">
+            ⚠️ Use getters sparingly in Angular, especially in templates with change detection, and never as a replacement for business logic.
+        </div>
+    </article>
+  </div>
+</section>
+ 
+ 
+ 
+
+
