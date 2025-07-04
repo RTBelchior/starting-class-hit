@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-validators',
+  selector: 'app-cors',
   imports: [],
-  templateUrl: './validators.component.html',
+  templateUrl: './cors.component.html',
   styleUrl: './../../firebase/firebase.component.css'
 })
-export class ValidatorsComponent {
+export class CorsComponent {
 
 }

@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
   selector: 'app-solid',
   imports: [],
   templateUrl: './solid.component.html',
-  styleUrl: './solid.component.css'
+  styleUrl: './../../firebase/firebase.component.css'
 })
 export class SolidComponent {
   private router = inject(Router);

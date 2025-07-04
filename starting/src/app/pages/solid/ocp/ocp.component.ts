@@ -4,7 +4,7 @@ import { Component, inject } from '@angular/core';
   selector: 'app-ocp',
   imports: [],
   templateUrl: './ocp.component.html',
-  styleUrl: './../srp/solid.component.css',
+  styleUrl: './../../firebase/firebase.component.css',
 })
 export class OcpComponent {
 

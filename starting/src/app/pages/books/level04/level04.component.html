@@ -1,29 +1,41 @@
-<div class="container">
-  <h1>Exemplos de Assincronas Level 03</h1>
-  <section class="topic">
-    <div class="card right-align">
-      <button class="home-button" routerLink="/">Go Back to Home</button>
-    </div>
-    <h2>Promise => then.</h2>
-    <!-- Tag app-control-structures -->
-    <app-promises></app-promises>
-  </section>
-
-  <section class="topic">
-    <h2>Observable => Subscribe ( => {{'{'}}next, error,complete {{'}'}})</h2>
-    <!-- Tag app-operators -->
-    <app-observables></app-observables>
-  </section>
-
-  <section class="topic">
-    <h2>Observable com pipe </h2>
-    <!-- Tag app-operators -->
-    <app-observable02></app-observable02>
-  </section>
-
-  <section class="topic">
-    <h2>Signal()</h2>
-    <!-- Tag app-dependency-injection -->
-    <app-signal></app-signal>
-  </section>
+<div class="header">
+  <h1>Angular Class Level 04</h1>
+  <p class="subtitle">
+    {{"asynchronous data." | upcaseFirstWord}}
+  </p>
 </div>
+ 
+<div class="card right-align">
+  <button class="home-button" routerLink="/">Go Back to Home</button>
+</div>
+<div class="container-guide">
+  <div class="content-wrap">
+    <section class="topic">
+      <h2>Asynchronous in Angular </h2>
+ 
+    </section>
+    <section class="topic">
+      <h2>Promise .then(res =>) </h2>
+      <!-- Promise -->
+      <app-promises></app-promises>
+    </section>
+    <section class="topic">
+      <h2>Observable.Subscribe( => {{'{'}}next, error, complete{{'}'}}) </h2>
+      <!-- Observable -->
+      <app-observables></app-observables>
+    </section>
+    <section class="topic">
+      <h2>Observable com Pipe Async </h2>
+      <!-- Pipe Async -->
+      <app-observable02></app-observable02>
+    </section>
+    <section class="topic">
+      <h2>Signal()</h2>
+      <!-- Signal -->
+      <app-signal></app-signal>
+ 
+    </section>
+  </div>
+ 
+</div>
+ 

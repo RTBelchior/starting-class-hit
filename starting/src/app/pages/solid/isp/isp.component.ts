@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-isp',
   imports: [],
   templateUrl: './isp.component.html',
-  styleUrl: './../srp/solid.component.css',
+  styleUrl: './../../firebase/firebase.component.css',
 })
 export class IspComponent {
 

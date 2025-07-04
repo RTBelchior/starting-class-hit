@@ -4,8 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-lsp',
   imports: [],
   templateUrl: './lsp.component.html',
-  styleUrl: './../srp/solid.component.css',
-  //styleUrl: './lsp.component.css'
+  styleUrl: './../../firebase/firebase.component.css',
 })
 export class LspComponent {
 

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-dip',
   imports: [],
   templateUrl: './dip.component.html',
-  styleUrl: './../srp/solid.component.css',
+  styleUrl: './../../firebase/firebase.component.css',
 })
 export class DipComponent {
 
