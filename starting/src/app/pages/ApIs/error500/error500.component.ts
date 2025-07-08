@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-error500',
   imports: [],
   templateUrl: './error500.component.html',
-  styleUrl: './../error400/error400.component.css'
+  styleUrl: './../../firebase/firebase.component.css'
 })
 export class Error500Component {
 
