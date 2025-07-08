@@ -1,18 +1,27 @@
+import { ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { IWeather } from '../../../_shared/weather';
 import { WeatherService } from './../../../_services/weather.service';
 import { Component, inject, signal } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-weather-channel',
-  imports: [],
+  imports: [CommonModule,ReactiveFormsModule],
   templateUrl: './weather-channel.component.html',
   styleUrl: './weather-channel.component.css'
 })
 export class WeatherChannelComponent {
   private WeatherService = inject(WeatherService);
+  protected weatherForms: UntypedFormGroup;
   protected localWeatherSig = signal<IWeather | undefined>(undefined);
   protected localCountry = "Lisbon";
 
+   constructor(private fb:UntypedFormBuilder){
+    this.weatherForms = this.fb.nonNullable.group({
+      city: [""]
+    });
+  }
+  
   ngOnInit(): void{
     this.WeatherService.getWeather2(this.localCountry).subscribe({
       next: (res) => {this.localWeatherSig.set(res), console.log("Res In WeatherComponent: ",this.localWeatherSig())},
@@ -20,5 +29,14 @@ export class WeatherChannelComponent {
       complete: () => {},
     });
   console.log("Variavel LocalWeatherSig Fora do Observable Undefined: ", this.localWeatherSig()?.current);
+  }
+
+  submit() {
+    console.log("nossa cidade", this.weatherForms.get('city')?.value)
+    this.localCountry = this.weatherForms.get('city')?.value;
+    this.WeatherService.getWeather(this.localCountry).subscribe({
+      next:(res) => {this.localWeatherSig.set(res)},
+      error:(e) => {console.error("Error In Api")}
+    });
   }
 }

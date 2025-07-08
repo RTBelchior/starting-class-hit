@@ -6,7 +6,7 @@
   </p>
 </div>
  
-<section class="container-guide">
+<section class="firebase-guide" [formGroup]="validatorForms">
   <div class="content-wrap">
  
     <article>
@@ -37,6 +37,10 @@
 import &#123; FormControl &#125; from {{'@angular/forms'}};
  
 const name = new FormControl('', &#123; nonNullable: true &#125;);
+        </code></pre>
+        <p><strong>Example in HTML:</strong></p>
+        <pre><code>
+          {{ '[formGroup]= "validatorForms"'}}
         </code></pre>
       </section>
  
