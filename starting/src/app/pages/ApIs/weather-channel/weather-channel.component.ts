@@ -3,10 +3,11 @@ import { IWeather } from '../../../_shared/weather';
 import { WeatherService } from './../../../_services/weather.service';
 import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { UpcaseFirstWordPipe } from "../../../_shared/pipes/upcase-first-word.pipe";
 
 @Component({
   selector: 'app-weather-channel',
-  imports: [CommonModule,ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, UpcaseFirstWordPipe],
   templateUrl: './weather-channel.component.html',
   styleUrl: './weather-channel.component.css'
 })
@@ -15,11 +16,17 @@ export class WeatherChannelComponent {
   protected weatherForms: UntypedFormGroup;
   protected localWeatherSig = signal<IWeather | undefined>(undefined);
   protected localCountry = "Lisbon";
+  private justletter: RegExp = /^[a-zA-ZÀ-ÿ\s]+$/;
 
-   constructor(private fb:UntypedFormBuilder){
+
+  constructor(private fb:UntypedFormBuilder){
     this.weatherForms = this.fb.nonNullable.group({
-      city: [""]
+      city: ["", [Validators.required, Validators.pattern(this.justletter)]]
     });
+
+    // Exemplo de como aceder aos controlos do forms
+    console.log("Form controls.", this.weatherForms.controls);
+    console.log("Form weatherForm.", this.weatherForms.get('city')?.invalid);
   }
   
   ngOnInit(): void{
