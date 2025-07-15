@@ -1,3 +1,4 @@
+import { environment } from './../environments/environment';
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
 
@@ -21,10 +22,11 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const firebaseApp = initializeApp(environment.firebaseConfig);
+const auth = getAuth(firebaseApp);
+export {firebaseApp,auth}
 
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideHttpClient()]
 };
 
-export const auth = getAuth(app);

@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs';
-import { IWeather } from '../../../_shared/weather';
+import { IWeather } from '../../../_shared/interfaces/weather';
 import { WeatherService } from '../../../_services/weather.service';
 import { Component, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';

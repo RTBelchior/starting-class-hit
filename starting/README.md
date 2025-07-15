@@ -2,6 +2,7 @@
  
 inicio do projeto
 Obs: Na aula 10, foi feito update do css do Header, foi feito a responsividade
+Obs: Falta fazer o template das diretivas NgFor, NgIf NgClass e outras Aula 06
  
 # aula01
  
@@ -43,7 +44,7 @@ inicio sobre Template Literals `${....}` Obs: Template Literals somente para .TS
  
 configuração do do firebase hosting : https://console.firebase.google.com/
  
-# Aula 06
+# Aula 06 diretivas NgFor, NgIf NgClass e outras
  
 Crianção dos componentes de nivelamento e suas tags.
 Estrutura de controle
@@ -101,29 +102,60 @@ Estrutura de controle
 11. falar sobre o request, sobre devtools NETWORK / Fetch/XHR e sobre error.
 12. criar components success, error 400 and error 500, update header
 13. criar component reqres e fazer o seu style
-14. Nivelamento 2,falar sobre Regex. No file _shared/pipes/
+14. Nivelamento 2,falar sobre Regex. No file \_shared/pipes/
 15. inicio aos formularios.
  
 # Aula 11
  
 1. criar o componente de rota da API , bem sua rota e subscriber na api weather e regres.
 2. Criação dos components firebaseInitHosting, authentication da rota filha angular/firebase e conf. do header
-Obs: Criação das paginas Pais, Angular, Firebase e What is Api, update do css e html deste components
+   Obs: Criação das paginas Pais, Angular, Firebase e What is Api, Solid update do css e html deste components.
 3. inicio dos Forms para componente weather
-4. inicio dos Validators
+4. inicio dos Validators e seu components
+5. Criação da Rota forms e seus components
+6. Continuação do nivelamento falar sobre ...SPREAD e Outros
+7. estilizar todos o todos componentes, ficando somente error-https com css proprios
  
 # Aula 12
  
-1. inicio dos Forms para componente signIn
+1. inicio dos Forms para componente weather
+2. inicio dos Forms para componente signIn
+4. Validators em todos forms
+5. Api Crud (Principais Verbos Http)
+6. criação do server popup
+7. criançao do Js Fundaments e seus components e suas rotas
+8. instalação do npm install html2pdf.js
+9. criação do file: /src/html2pdf.d.ts com declare module 'html2pdf.js' {
+   const html2pdf: any;
+   export default html2pdf;
+   }
+10. por no ts dos modulos @ViewChild('pdfContent') content!: ElementRef;
  
-# Aula 14
+downloadPDF() {
+const options = {
+filename: 'tap-guia.pdf',
+image: { type: 'jpeg', quality: 0.98 },
+html2canvas: { scale: 2 },
+jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+};
+html2pdf().set(options).from(this.content.nativeElement).save();
+}
+11. no template : a Referencia #pdfContent e <button class="home-button-pdf" (click)="downloadPDF()">📄 Download PDF</button>
  
-1. inicio dos Forms para componente signUp
+# Aula 13 Autenticação com Gmail
+1. Config. do autentication no painel do firebase, escolha do gmailAuth
+2. iniciar o App do firebase no App.config .
+3. criação da interface AuthInterface.
+4. criação service gmailService.
+5. injetar o service no componente e testar a autenticação.
+6. por os dados no localStorage e falar sobre Application do navegador
+ 
+10. inicio dos Forms para componente signUp
  
 # Aula 15
- 
-1. introdução ao Observables, criação component Observable. Update Header links para Asynchronous. Observable e Promise.
  
 # Aula 16
  
 1. Atualização da versão do Angular
+
+ 
