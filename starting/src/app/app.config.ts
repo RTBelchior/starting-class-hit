@@ -6,6 +6,7 @@ import { routes } from './app.routes';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { provideHttpClient } from '@angular/common/http';
+import { getAuth } from 'firebase/auth';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -25,3 +26,5 @@ const app = initializeApp(firebaseConfig);
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideHttpClient()]
 };
+
+export const auth = getAuth(app);

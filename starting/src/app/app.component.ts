@@ -13,6 +13,9 @@ import { ReqresService } from './_services/reqres.service';
   styleUrl: './app.component.css'
 })
 export class AppComponent  implements OnInit{
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
 
   ReqresService = inject(ReqresService);
 
