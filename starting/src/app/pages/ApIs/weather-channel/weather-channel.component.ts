@@ -1,3 +1,4 @@
+import { PopUpService } from './../../../_shared/pop-up/pop-up.service';
 import { ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { IWeather } from '../../../_shared/interfaces/weather';
 import { WeatherService } from './../../../_services/weather.service';
@@ -13,6 +14,7 @@ import { UpcaseFirstWordPipe } from "../../../_shared/pipes/upcase-first-word.pi
 })
 export class WeatherChannelComponent {
   private WeatherService = inject(WeatherService);
+  private popUpService = inject(PopUpService)
   protected weatherForms: UntypedFormGroup;
   protected localWeatherSig = signal<IWeather | undefined>(undefined);
   protected localCountry = "Lisbon";
@@ -42,8 +44,8 @@ export class WeatherChannelComponent {
     console.log("nossa cidade", this.weatherForms.get('city')?.value)
     this.localCountry = this.weatherForms.get('city')?.value;
     this.WeatherService.getWeather(this.localCountry).subscribe({
-      next:(res) => {this.localWeatherSig.set(res)},
-      error:(e) => {console.error("Error In Api")}
+      next:(res) => {this.localWeatherSig.set(res), this.popUpService.show("everyting ok!", "success")},
+      error:(e) => {console.error("Error In Api"), this.popUpService.show("ops... Error in API Weater: " + e, 'error')}
     });
   }
 }

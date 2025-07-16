@@ -1,0 +1,6 @@
+@if (this.PopUpService.getMessage$() | async; as message){
+    <div class="popup" ngClass="message.type">
+        <span class="mesage">{{ message.text }}</span>
+        <button class="close-btn" (click)="this.PopUpService.clear()">X</button>
+    </div>
+}

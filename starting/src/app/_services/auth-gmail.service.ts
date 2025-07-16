@@ -25,7 +25,7 @@ export class AuthGmailService implements AuthInterface {
     const signIn = signInWithPopup(this.auth,providedIn);
     return from(signIn).pipe(tap((res) => {
       // salvando no localstorage
-      localStorage.setItem('User', JSON.stringify(res.user));
+      localStorage.setItem('user', JSON.stringify(res.user));
       //salvando no Observable
       this.currentUser$.next(res.user);
     }));
