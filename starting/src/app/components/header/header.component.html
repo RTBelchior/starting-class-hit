@@ -14,12 +14,13 @@
     </div>
   </div>
 
+  @if (this.authGmailService.isAuthenticated()) {
     <nav class="nav-content">
       <div class="nav-item has-expandable">
-
+  
       </div>
       <div class="nav-item has-expandable">
-
+  
       </div>
       <div class="nav-item has-expandable">
         <a class="logo-link">{{"dry? solid? calisthenics?" | upcaseFirstWord }}</a>
@@ -30,7 +31,7 @@
               <a routerLink="/angular/dry" class="submenu-link">Dry</a>
             </div>
           </div>
- 
+  
           <div class="submenu-block">
             <a class="logo-link">What is Solid?</a>
             <div class="submenu-sub">
@@ -41,7 +42,7 @@
               <a routerLink="/angular/solid/dip" class="submenu-link">Dependency Inversion Principle</a>
             </div>
           </div>
- 
+  
           <div class="submenu-block">
             <a class="logo-link">What is Object Calisthenics?</a>
             <div class="submenu-sub">
@@ -64,10 +65,10 @@
             </div>
           </div>
         </div>
- 
+  
       </div>
- 
- 
+  
+  
       <div class="nav-item has-expandable">
         <a routerLink="/angular" class="logo-link">Angular</a>
         <div class="submenu">
@@ -82,7 +83,7 @@
           <a routerLink="/angular/firebase/authentication" class="submenu-link">Authentication</a>
         </div>
       </div>
- 
+  
       <div class="nav-item has-expandable">
         <a class="logo-link">Leveling</a>
         <div class="submenu">
@@ -111,7 +112,38 @@
           <a routerLink="/angular/forms/signUp" class="submenu-link">SignUp</a>
         </div>
       </div>
- 
+  
     </nav>
+
+  }@else {
+    <nav class="nav-content">
+  
+      <div class="nav-item has-expandable">
+        <a routerLink="/angular" class="logo-link">Angular</a>
+        <div class="submenu">
+          <a routerLink="/angular/get-starting" class="submenu-link">Get Starting With Angular</a>
+          <a routerLink="/angular/git" class="submenu-link">Git</a>
+        </div>
+      </div>
+
+      <div class="nav-item has-expandable">
+        <a routerLink="/angular/firebase" class="logo-link">Firebase</a>
+        <div class="submenu">
+          <a routerLink="/angular/firebase/init-with-hosting" class="submenu-link">Init with Hosting</a>
+          <a routerLink="/angular/firebase/authentication" class="submenu-link">Authentication</a>
+        </div>
+      </div>
+      
+      <div class="nav-item has-expandable">
+        <a class="logo-link">Authentication</a>
+        <div class="submenu">
+          <a routerLink="/angular/forms/signIn" class="submenu-link">SignIn</a>
+        </div>
+      </div>
+      
+  
+    </nav>
+  }
+
  
 </header>
