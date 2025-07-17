@@ -35,6 +35,7 @@ export class AuthGmailService implements AuthInterface {
     return  from (signOut(this.auth)).pipe(tap(() => {
       this.currentUser$.next(null);
       this.router.navigateByUrl('/');
+      localStorage.clear();
     }))
   }
 
