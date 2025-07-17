@@ -12,7 +12,7 @@ export const routes: Routes = [
     
     {path: 'angular/hit', loadChildren:() => import('./pages/hit/hit.routes').then(c =>c.hitRoutes), canActivate:[authenticationGuard]},
     {path: 'angular/forms', loadChildren: () => import('./pages/forms/forms.routes').then(c => c.formsRoutes)},
-    {path: 'Wellcome', loadComponent: () => import('./pages/wellcome/wellcome.component').then(c => c.WellcomeComponent), canActivate:[authenticationGuard]},
+    {path: 'wellcome', loadComponent: () => import('./pages/wellcome/wellcome.component').then(c => c.WellcomeComponent), canActivate:[authenticationGuard]},
     
     {path: 'angular/level', loadChildren: () => import('./pages/books/level.routes').then(c => c.levelRoutes), canActivate:[authenticationGuard]},
     {path: 'angular/solid', loadChildren: () => import('./pages/solid/solid.routes').then(c => c.solidRoutes), canActivate:[authenticationGuard]},
