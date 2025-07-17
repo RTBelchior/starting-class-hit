@@ -7,9 +7,13 @@
       <h1>Welcome to the Angular Trainer</h1>
       <p>Be ready to be more than just a student</p>
     </div>
-    <div class="local-header-content-right"></div>
+    <div class="local-header-content-right">
+      @if (this.authGmailService.isAuthenticated()) {
+        <app-avatar></app-avatar>
+      }
+    </div>
   </div>
-  
+
     <nav class="nav-content">
       <div class="nav-item has-expandable">
 
